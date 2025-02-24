@@ -1,0 +1,40 @@
+###Register
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+  "fullName": "Carl White",
+  "email": "carl.white@gmail.com",
+  "password": "secure123",
+  "profilePic": "https://example.com/profile.jpg"
+}
+
+
+###Login
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "wM@gmail.com",
+    "password": "secure123"
+}
+
+
+###Logout
+GET http://localhost:5000/users/logout
+
+
+###UserProfile
+GET http://localhost:5000/users/67b5abf69692c1b0e91efc5d
+
+
+
+###UpdateProfile
+PUT http://localhost:5000/users/67b5abf69692c1b0e91efc5d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjY1ZjM2YTljZTI2M2MzMjhhZDI5NiIsImlhdCI6MTc0MDAzNzg5NSwiZXhwIjoxNzQwMDM5Njk1fQ.ntEdqc-bwphsxOrgb8S3GifUSjxaCK992ZlE-loEpC4
+{
+  "email": "c.white@gmail.com",
+  "password": "secure123"
+}
+

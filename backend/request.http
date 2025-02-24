@@ -1,0 +1,39 @@
+###Register
+POST http://localhost:6000/api/users/register
+Content-Type: application/json
+
+{
+  "fullName": "dama",
+  "email": "dama@gmail.com",
+  "password": "12345",
+  "profilePic": "https://example.com/profile.jpg"
+}
+
+
+###Login
+POST http://localhost:6000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "c.watson@gmail.com",
+    "password": "secure123"
+}
+
+
+###Logout
+GET http://localhost:6000/api/users/logout
+
+
+###UserProfile
+GET http://localhost:6000/api/users/67b375584cf11084bc4a3391
+
+
+
+###UpdateProfile
+PUT http://localhost:6000/api/users/67b375584cf11084bc4a3391
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjM3NTU4NGNmMTEwODRiYzRhMzM5MSIsImlhdCI6MTczOTgxNDMzMCwiZXhwIjoxNzM5ODE2MTMwfQ.19RYitwCcx9XcAqULdfJ1YYevdAMXehnV_8V0pH8kDE
+
+{
+  "email": "claire.watson@gmail.com"
+}

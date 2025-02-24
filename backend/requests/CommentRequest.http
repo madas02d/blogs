@@ -1,0 +1,22 @@
+### Get comments for a specific post
+GET http://localhost:5000/comments/67b59a4b20c12fbdd86f221f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjU5NmQzMjBjMTJmYmRkODZmMjIwOCIsImlhdCI6MTczOTk1MzkyNCwiZXhwIjoxNzM5OTU1NzI0fQ.L4du0bDmsPuzxQFYlma0_S8KZXgF7jwG52y8pcxp1G4
+
+
+###Adding a comment to a specific post
+POST http://localhost:5000/comments/67b6e0d294a12a10afc1244c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjY1ZjM2YTljZTI2M2MzMjhhZDI5NiIsImlhdCI6MTc0MDAzNzg5NSwiZXhwIjoxNzQwMDM5Njk1fQ.ntEdqc-bwphsxOrgb8S3GifUSjxaCK992ZlE-loEpC4
+
+
+{
+  "text": "Bla Bla bla"
+}
+
+
+###Deleting a comment 
+DELETE http://localhost:5000/comments/67b59b9420c12fbdd86f2226
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjU5NmQzMjBjMTJmYmRkODZmMjIwOCIsImlhdCI6MTczOTk1MzkyNCwiZXhwIjoxNzM5OTU1NzI0fQ.L4du0bDmsPuzxQFYlma0_S8KZXgF7jwG52y8pcxp1G4
+

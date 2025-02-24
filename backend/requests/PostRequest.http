@@ -1,0 +1,37 @@
+###Get all Posts
+GET http://localhost:5000/posts
+
+
+###Create a new post
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+
+{
+    "author": "67b65f36a9ce263c328ad296",
+    "title": "Something Worth Talking about",
+    "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat adipiscing sem; accumsan phasellus feugiat rutrum accumsan molestie auctor. Massa dictum scelerisque viverra maecenas ut cubilia velit tortor lobortis. Maecenas consectetur elit lectus vestibulum diam ornare condimentum placerat. Vitae fames commodo ut lobortis efficitur eros odio rhoncus blandit. Nullam phasellus dui habitant, maximus porta luctus purus rutrum. Dolor dolor sollicitudin integer condimentum viverra ante montes nulla sit. Eros phasellus feugiat nulla metus neque maximus metus. Leo pharetra congue arcu ullamcorper; duis donec dolor condimentum. Mi dictum elementum  ",
+    "tags": "general",
+    "categories": "general",
+    "published": true
+}
+
+
+###Get a specific post
+GET http://localhost:5000/posts/67b5acc89692c1b0e91efc66
+
+###Update a specific post 
+PUT http://localhost:5000/posts/67b5acc89692c1b0e91efc66
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjY1ZjM2YTljZTI2M2MzMjhhZDI5NiIsImlhdCI6MTc0MDAzNzg5NSwiZXhwIjoxNzQwMDM5Njk1fQ.ntEdqc-bwphsxOrgb8S3GifUSjxaCK992ZlE-loEpC4
+
+{
+    "content": "Do you like italian food?"
+}
+
+
+###Delete a specific post
+DELETE http://localhost:6000/posts/67b5acc89692c1b0e91efc66
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjVhYmY2OTY5MmMxYjBlOTFlZmM1ZCIsImlhdCI6MTczOTk1OTI5NiwiZXhwIjoxNzM5OTYxMDk2fQ.pWtp9sYa947vxEuq6NAVgYfWORikEz5KM2jYdOBJuyg
+
+
